@@ -6,6 +6,7 @@ const bodyParser = require('body-parser')
 var db = require('./db')
 
 const port = 3000
+app.use(express.static('public'))
 
 var usersRoute = require('./routes/user.route')
 var homeRoute = require('./routes/home.route')

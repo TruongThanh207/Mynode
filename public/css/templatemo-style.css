@@ -210,19 +210,19 @@ a:focus {
   padding: 10px 22px 8px;
   transition: all 0.3s ease;
 }
-
+/* 
 .tm-down-arrow:hover,
 .tm-down-arrow:focus {
   color: white;
   background: #3496d8;
-}
+} */
 
 /* Introduction */
 
 .tm-section-title {
   font-size: 2.6rem;
   font-weight: normal;
-}
+} */
 
 .tm-intro-text {
   font-size: 1.2rem;
