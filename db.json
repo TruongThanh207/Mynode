@@ -1,16 +1,14 @@
 {
   "users": [
     {
-      "name": "Thu",
-      "id": "lasrLuxhD"
-    },
-    {
       "name": "Thanh",
-      "id": "SGFy-4TyM"
+      "phone": "098718321",
+      "id": "CWBJW5hV1"
     },
     {
-      "name": "Hoang Trinh",
-      "id": "qsL37TY3y"
+      "name": "Thu",
+      "phone": "091781731",
+      "id": "elY6laiBq"
     }
   ]
 }

@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <%- include('../layout/head.ejs')%>
 </head>
-<body>
+<body class="container">
+    <% if(typeof errors != "undefined"){ %>
+        <% for(var us in errors) {%>
+            <div class="alert alert-warning">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <%=errors[us]%>
+            </div>
+        <% } %>
+    <% } %>
+    
+    
+    
+      
     <h1>Create</h1>
+
     <form action="/user/create" method="POST">
-        Name
-        <br>
-        <input type="text" name="name">
-        <button type="submit">Create</button>
-    </form>
+        <div class="form-group">
+          <label for="formGroupExampleInput">Name</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name input" name="name">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Phone</label>
+          <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="Phome input" name="phone">
+        </div>
+        <button type="submit" class="btn btn-outline-primary">Create</button>
+      </form>
+    
+
+    <%- include('../layout/js.ejs')%>
 </body>
 </html>

@@ -11,6 +11,8 @@ app.use(express.static('public'))
 var usersRoute = require('./routes/user.route')
 var homeRoute = require('./routes/home.route')
 
+
+
 app.set('view engine', 'ejs')
 app.set('views', './views')
 

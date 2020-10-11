@@ -13,8 +13,9 @@ module.exports.get_create = function (req, res) {
 module.exports.post_create = function (req, res) {
     // if(users.every(v => v.name !== 'Thu')) //so sánh giá tri các phần tử mảng === Thu 
     // {
-      req.body.id = shortid.generate()
-      db.get('users').push(req.body).write()
+    req.body.id = shortid.generate()
+
+    //   db.get('users').push(req.body).write()
     // }
     // else
     // {
@@ -23,7 +24,10 @@ module.exports.post_create = function (req, res) {
     //           users.splice('Thanh',1)    
     //     }
     // }
+
+    db.get('users').push(req.body).write()
     res.redirect('/user')
+
 
 }
 
